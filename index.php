@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>HTML Tutorial</title>
+<title>Biblioteca</title>
 </head>
 <body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
+<form action="index.php" method="post">
+            <input type="file" name="input" id="input" accept="application/pdf">
+            Solo .pdf 
+            <br><br>
+            <input type="submit" name="submit" value="Invia">
+            <br><br>
+            <?php
+            echo "file: ";
+            if (isset($_POST["input"])) {
+                echo $_POST["input"];
+            }
+            ?>
+        </form>
 </body>
 </html>
