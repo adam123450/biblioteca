@@ -15,6 +15,7 @@
             if (isset($_POST["input"])) {
                 echo $_POST["input"];
             }
+            
             ?>
         </form>
 </body>
