@@ -15,7 +15,7 @@
             if (isset($_POST["input"])) {
                 echo $_POST["input"];
             }
-            
+            <!-- un commento per prova -->     
             ?>
         </form>
 </body>
